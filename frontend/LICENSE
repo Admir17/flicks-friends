@@ -1,0 +1,93 @@
+
+---
+
+## 2) Root `CONTRIBUTING.md` 
+
+```md
+# Contributing
+
+Thank you for contributing to this project.
+
+## Mandatory Language Rule
+
+This repository is **English-only** for:
+- documentation
+- code comments
+- commit messages
+- pull requests
+- issues
+
+---
+
+## Branch Strategy
+
+- `main` = stable branch
+- Feature branches:
+  - `feat/<short-description>`
+  - `fix/<short-description>`
+  - `refactor/<short-description>`
+  - `docs/<short-description>`
+
+Examples:
+- `feat/add-watchparty-validation`
+- `fix/login-lockout-race-condition`
+
+---
+
+## Commit Message Format
+
+Use Conventional Commits:
+
+- `feat:`
+- `fix:`
+- `refactor:`
+- `docs:`
+- `test:`
+- `chore:`
+
+Examples:
+- `feat(auth): add OTP verification endpoint`
+- `fix(api): return 400 on invalid watchparty payload`
+- `docs(readme): add monorepo setup instructions`
+
+---
+
+## Pull Request Checklist
+
+Before opening a PR:
+
+- [ ] Title and description are in English
+- [ ] Scope is focused and small
+- [ ] No secrets are committed
+- [ ] Relevant tests were run locally
+- [ ] Behavior changes are documented
+- [ ] Breaking changes are clearly labeled
+
+---
+
+## Code Quality Guidelines
+
+- Keep controllers thin; move logic into services
+- Validate request input (`@Valid`, DTOs)
+- Prefer explicit error handling over catch-all blocks
+- Avoid manual JSON string construction
+- Add/update tests when changing logic
+
+---
+
+## Security Rules
+
+- Never commit real API keys, passwords, or tokens
+- Use environment variables and secret managers
+- If a secret is leaked, rotate immediately
+- Review dependency updates regularly
+
+---
+
+## Reporting Issues
+
+Please include:
+- expected behavior
+- actual behavior
+- steps to reproduce
+- logs/screenshots (if relevant)
