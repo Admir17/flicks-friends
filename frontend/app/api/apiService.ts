@@ -10,7 +10,7 @@ export class ApiService {
 
   private buildHeaders(isFormData = false): HeadersInit {
     const token = typeof window !== "undefined"
-      ? sessionStorage.getItem("token")
+      ? sessionStorage.getItem("token") ?? localStorage.getItem("token")
       : null;
 
     const headers: HeadersInit = {
