@@ -27,7 +27,6 @@ bash run-local.sh
 ```
 
 Notes:
-- Use **Java 17** for backend development. If you see `Unsupported class file major version 65`, your shell is using Java 21 instead of Java 17.
 - Backend runs on `http://localhost:8080` by default.
 - `TMDB_API_KEY` and `TMDB_API_TOKEN` are required for movie endpoints.
 - `SMTP_USERNAME` and `SMTP_PASSWORD` are optional (invite emails are skipped if missing).
